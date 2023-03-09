@@ -24,14 +24,14 @@ public class FindMaxInArray {
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
         }
-        int max = array[0];
+        int min = array[0];
         int index = 1;
         for (int j = 0; j < array.length; j++) {
-            if (array[j] > max) {
-                max = array[j];
+            if (array[j] < min) {
+                min = array[j];
                 index = j + 1;
             }
         }
-        System.out.println("The largest property value in the list is " + max + " ,at position " + index);
+        System.out.println("The largest property value in the list is " + min + " ,at position " + index);
     }
         }
