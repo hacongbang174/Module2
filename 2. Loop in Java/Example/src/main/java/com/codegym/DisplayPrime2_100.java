@@ -4,30 +4,23 @@ import java.util.Scanner;
 
 public class DisplayPrime2_100 {
     public static void main(String[] args) {
-        exercisePrime();
-    }
-    public static void exercisePrime() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập vào một số: ");
-        int number = scanner.nextInt();
-        boolean check = isPrime(number);
-        if (check == true) {
-            System.out.println(number + " là số nguyên tó");
-        }else{
-            System.out.printf("%s không là số nguyên tố", number);
-        }
-    }
-    //
-    public static boolean isPrime(int number){
-        boolean check = true;
-        if (number <= 1) {
-            System.out.printf("%s không là số nguyên tố", number);
-        }
-        for(int i=2;i<number-1;i++){
-            if (number % 2  == 0) {
-                check = false;
+        int point = 0;
+        int count = 0;
+        System.out.println("Các số nguyên tố từ 2 đến 100:");
+        for (int N = 2; N < 100; N++) {
+            if (point < 100) {
+                for (int j = 1; j <= N; j++) {
+                    if (N % j == 0) {
+                        count += 1;
+                    }
+                }
+                if (count == 2) {
+                    System.out.println(N);
+                }
+                count = 0;
+            } else {
+                break;
             }
         }
-        return check;
     }
 }
