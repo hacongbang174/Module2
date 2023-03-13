@@ -57,11 +57,3 @@ Nếu lớp B là lớpc on của A, lớp C là lớp con của B,thì mỗi đ
 
 
 Bài tập 
-
-
-Đọc bài trước, note lại và demo:
-Lớp Wrapper trong java
-https://viettuts.vn/java/lop-wrapper-trong-java
-
-Kiểu tham chiếu và tham trị trong Java
-https://gochocit.com/ngon-ngu-lap-trinh/truyen-tham-tri-va-tham-chieu-cho-phuong-thuc-trong-java
