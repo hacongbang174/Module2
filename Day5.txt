@@ -1,0 +1,67 @@
+11/03/23
+
+1. Static (tĩnh):
+ - Là biến của lớp, sử dụng để khai báo các thuộc tính và phương thức của lớp (không trực thuộc đối tượng);
+ - Phương thức static chỉ có thể gọi các phương thức static khác, truy xuất biến static ( ko thể dùng this và super) , khởi tạo biến static thông qua khối khởi tạo static.
+
+2. Public : tất cả các lớp, đối tượng đều truy cập đc.
+3. Private: thuộc tính và phương thức được tạo từ private chỉ có lớp đó truy cập, còn lại đều ko truy cập đc
+4. Protected : có thể truy cập đc bởi tất cả các lớp (cùng package), lớp con (trong, ngoài package). Không thể sử dụng tham chiếu
+5. Default : phạm vi truy cập chỉ nằm trong gói package.
+
+Các phương thức được khai báo public trong một lớp cha cũng phải là public trong tất cả lớp phụ.
+
+Các phương thức được khai báo protected trong một lớp cha phải hoặc là protected hoặc public trong các lớp phụ; chúng không thể là private.
+
+Các phương thức được khai báo mà không có điều khiển truy cập (không sử dụng modifier nào) có thể được khai báo private trong các lớp phụ.
+
+Các phương thức được khai báo private không được kế thừa, do đó không có qui tắc nào cho chúng.
+
+6. Package (gói) : 
+
+Java package được sử dụng để phân loại các lớp và các interface để mà chúng có thể được duy trì dễ dàng hơn.
+
+Java package cung cấp bảo vệ truy cập.
+
+Java package xóa bỏ các xung đột về đặt tên.
+
+7. Extends : khai báo kế thừa
+8. instanceof : toán tử kiểm tra kiểu đối tượng trả về kiểu boolean.
+9. final : từ khóa áp dụng cho lớp ( ngăn ngừa kế thừa và ghi đè phương thức)
+
+
+ + Import : lớp và đối tượng của package khác truy cập tới package hiện tại.
+  - tenpackage.* : truy cập tất cả.
+  - tenpackage.tenlop: truy cập đến lớp có tên tenlop.
+10. 
+	Cài đè (overriding) : cùng tên cùng kiểu cùng tham số
+	Nạp chồng (overloading) : cùng tên ( khác kiểu hoặc tham số)
+11. Kế thừa, đa hình: 
+
+Lớp con chuyên biệt hóa lớp cha của nó.
+
+Lớp con thừa kế tất cả các biến thực thể và phương thức public của lớp cha, nhưng không thừa kế các biến thực thể và phương thức private của lớp cha.
+
+Có thể cài đè các phương thức được thừa kế; không thể cài đè các biến thực thể được thừa kế (tuy có thể gán trị lại tại lớp con, nhưng đây là hai việc khác nhau)
+
+Dùng thử nghiệm IS-A để kiểm tra xem cấu trúc thừa kế của ta có hợp lí hay không. Nếu X là lớp con của Y thì khẳng định X IS-A Y phải hợp lý.
+
+Quan hệ IS-A chỉ có một chiều. Con sói nào cũng là động vật, nhưng không phải con vật nào cũng là chó sói.
+
+Khi một phương thức được cài đè tại một lớp con, và phương thức đó được kích hoạt cho một đối tượng của lớp đó, thì phiên bản tại lớp con sẽ được chạy (cái gì ở thấp nhất thì được gọi).
+
+Nếu lớp B là lớpc on của A, lớp C là lớp con của B,thì mỗi đối tượng B thuộcloại A, mỗi đối tượng C thuộc loại B, và mỗi đối tượng C cũng thuộc loại A. (quan hệ IS-A)
+
+Để gọi phiên bản phương thức của lớp cha từ trong lớp con, sử dụng từ khóa super làm tham chiếu tới lớp cha.
+
+
+
+Bài tập 
+
+
+Đọc bài trước, note lại và demo:
+Lớp Wrapper trong java
+https://viettuts.vn/java/lop-wrapper-trong-java
+
+Kiểu tham chiếu và tham trị trong Java
+https://gochocit.com/ngon-ngu-lap-trinh/truyen-tham-tri-va-tham-chieu-cho-phuong-thuc-trong-java

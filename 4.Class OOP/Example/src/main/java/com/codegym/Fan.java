@@ -56,3 +56,5 @@ public class Fan {
         System.out.println(myFan2.informationAboutFan());
     }
 }
+
+
