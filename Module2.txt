@@ -1,8 +1,10 @@
-11/03/23
+11/3/2023
 
 1. Static (tĩnh):
- - Là biến của lớp, sử dụng để khai báo các thuộc tính và phương thức của lớp (không trực thuộc đối tượng);
- - Phương thức static chỉ có thể gọi các phương thức static khác, truy xuất biến static ( ko thể dùng this và super) , khởi tạo biến static thông qua khối khởi tạo static.
+ - Sử dụng để khai báo các thuộc tính và phương thức của lớp (không trực thuộc đối tượng);
+ - Phương thức static chỉ có thể gọi các phương thức static khác.
+ - Truy xuất biến static ( ko thể dùng this và super)
+ - Có thể khởi tạo các dữ liệu static thông qua khối khởi tạo static.
 
 2. Public : tất cả các lớp, đối tượng đều truy cập đc.
 3. Private: thuộc tính và phương thức được tạo từ private chỉ có lớp đó truy cập, còn lại đều ko truy cập đc
@@ -36,6 +38,7 @@ Java package xóa bỏ các xung đột về đặt tên.
 10. 
 	Cài đè (overriding) : cùng tên cùng kiểu cùng tham số
 	Nạp chồng (overloading) : cùng tên ( khác kiểu hoặc tham số)
+
 11. Kế thừa, đa hình: 
 
 Lớp con chuyên biệt hóa lớp cha của nó.
@@ -44,16 +47,49 @@ Lớp con thừa kế tất cả các biến thực thể và phương thức pu
 
 Có thể cài đè các phương thức được thừa kế; không thể cài đè các biến thực thể được thừa kế (tuy có thể gán trị lại tại lớp con, nhưng đây là hai việc khác nhau)
 
-Dùng thử nghiệm IS-A để kiểm tra xem cấu trúc thừa kế của ta có hợp lí hay không. Nếu X là lớp con của Y thì khẳng định X IS-A Y phải hợp lý.
-
-Quan hệ IS-A chỉ có một chiều. Con sói nào cũng là động vật, nhưng không phải con vật nào cũng là chó sói.
-
-Khi một phương thức được cài đè tại một lớp con, và phương thức đó được kích hoạt cho một đối tượng của lớp đó, thì phiên bản tại lớp con sẽ được chạy (cái gì ở thấp nhất thì được gọi).
-
-Nếu lớp B là lớpc on của A, lớp C là lớp con của B,thì mỗi đối tượng B thuộcloại A, mỗi đối tượng C thuộc loại B, và mỗi đối tượng C cũng thuộc loại A. (quan hệ IS-A)
-
 Để gọi phiên bản phương thức của lớp cha từ trong lớp con, sử dụng từ khóa super làm tham chiếu tới lớp cha.
 
+12. Từ khóa This: 
+	+ Ánh xạ đối tượng khi cần sử dụng.
+	+ Gọi lại giá trị biến trong hàm tạo.
 
+	vd: public class Person {
+		public String name;
+		public int age;
+		public double height;	
+		public Person(String name){
+			this.name = name;
+		}
+		public Person(String name, int age){
+			this(name);
+			this.age = age;
+		}
+		public Person(String name, int age, double height){
+			this(name, age);
+			this.height = height;
+		}
+	}
 
-Bài tập 
+14/3/2023
+
+1. Abstract class: 
+	+ Không thể tạo đối tượng của lớp abstract.
+	+ Lớp chứa abstract method bắt buộc phải là abstract class.
+	+ subclass abstract kế thừa superclass abstract => thực hiện toàn bộ abstract method.
+	+ if (class or method is abstract) else (no final).
+	+ Abstract Method: chỉ có phần khai báo, không có phần thân.
+Cú pháp:
+	+ Class: [Access Modifier] abstract class TenLop (){}
+	+ Method: [Access Modifier] abstract [method] tenPhuongThuc (){}
+
+2. Interface: 
+	+ Tương tự như class (chỉ chứa constanst và abstract method), quy định các hành vi chung các lớp triển khai nó.
+	+ Có thể kế thừa Interface khác.
+
+Cú pháp: 
+	
+	+ Khai báo: [modifier] interface ITen {};
+			[modifier] interface ITen1 {};
+
+	+ Sử dụng (1 lớp kế thừa 1 hoặc nhiều interface): [modifier] class TenLop implement ITen, Iten1 () {}
+	
