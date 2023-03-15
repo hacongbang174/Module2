@@ -24,5 +24,7 @@ public class Test {
         System.out.println(((Circle) shapes[0]).resize(percent));
         System.out.println(((Rectangle) shapes[1]).resize(percent));
         System.out.println(((Square) shapes[2]).resize(percent));
+
+        System.out.println(((Square) shapes[2]).howToColor());
     }
 }
