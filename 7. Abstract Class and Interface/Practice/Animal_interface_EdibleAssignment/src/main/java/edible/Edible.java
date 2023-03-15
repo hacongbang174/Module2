@@ -1,4 +1,4 @@
-package com.codegym;
+package edible;
 
 public interface Edible {
     String howToEat();

@@ -1,4 +1,4 @@
-package com.codegym;
+package Animal;
 
 public class Tiger extends Animal {
     @Override
