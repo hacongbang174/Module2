@@ -14,25 +14,43 @@ public class InsertionSort {
         }
         System.out.println(Arrays.toString(arr));
 
-        insertionSort(arr);;
-    }
-    public static void insertionSort(int[] array){
         int pos, x;
-        for(int i = 1; i < array.length; i++){ //đoạn array[0] đã sắp xếp
-            x = array[i];
+        for(int i = 1; i < arr.length; i++){ //đoạn array[0] đã sắp xếp
+            x = arr[i];
             pos = i;
-            while(pos > 0 && x < array[pos-1]){
-                array[pos] = array[pos-1]; // đổi chỗ
-                System.out.println("Swap " + x + " with " + array[pos]);
+            while(pos > 0 && x < arr[pos-1]){
+                arr[pos] = arr[pos-1]; // đổi chỗ
+                System.out.println("Swap " + x + " with " + arr[pos]);
                 pos--;
             }
-            array[pos] = x;
+            arr[pos] = x;
 
             System.out.print("List after the  " + i + "' sort: ");
-            for (int j = 0; j < array.length; j++) {
-                System.out.print(array[j] + "\t");
+            for (int j = 0; j < arr.length; j++) {
+                System.out.print(arr[j] + "\t");
             }
             System.out.println();
         }
+
+//        insertionSort(arr);;
     }
+//    public static void insertionSort(int[] array){
+//        int pos, x;
+//        for(int i = 1; i < array.length; i++){ //đoạn array[0] đã sắp xếp
+//            x = array[i];
+//            pos = i;
+//            while(pos > 0 && x < array[pos-1]){
+//                array[pos] = array[pos-1]; // đổi chỗ
+//                System.out.println("Swap " + x + " with " + array[pos]);
+//                pos--;
+//            }
+//            array[pos] = x;
+//
+//            System.out.print("List after the  " + i + "' sort: ");
+//            for (int j = 0; j < array.length; j++) {
+//                System.out.print(array[j] + "\t");
+//            }
+//            System.out.println();
+//        }
+//    }
 }
