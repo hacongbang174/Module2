@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="856d89fa-2f72-4426-b6d9-e0721323f1b9" name="Changes" comment="" />
+    <list default="true" id="856d89fa-2f72-4426-b6d9-e0721323f1b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../13. Search Algorithm/Example/apj-find-maximum-subsequence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13. Search Algorithm/Example/apj-find-maximum-subsequence/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14. Sort Algorithm/Example/Sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../14. Sort Algorithm/Example/Sort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14. Sort Algorithm/Practice/BubbleSortByStep/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../14. Sort Algorithm/Practice/BubbleSortByStep/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../14. Sort Algorithm/Practice/SelectionSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../14. Sort Algorithm/Practice/SelectionSort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ArrayExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ArrayExample/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -18,15 +38,21 @@
     </option>
   </component>
   <component name="ProjectId" id="2NHZD8LZrHEw6aabOEqbpcI3YSy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -38,8 +64,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679322845519</updated>
-      <workItem from="1679322846620" duration="1000" />
+      <workItem from="1679322846620" duration="134000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

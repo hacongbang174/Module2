@@ -4,11 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38e00fa6-b34c-4443-90e1-a790562ba4c4" name="Changes" comment="" />
+    <list default="true" id="38e00fa6-b34c-4443-90e1-a790562ba4c4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Example/Sort/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/Sort/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/Sort/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/Sort/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/Sort/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/Sort/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/Sort/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/Sort/src/main/java/com/codegym/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../13. Search Algorithm/Example/apj-find-maximum-subsequence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13. Search Algorithm/Example/apj-find-maximum-subsequence/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SelectionSort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SelectionSort/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -26,7 +52,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CNTT/Codegym/Module2/14. Sort Algorithm/Practice/BubbleSortByStep",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -38,7 +71,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679296475758</updated>
+      <workItem from="1679296476803" duration="764000" />
+      <workItem from="1679297923763" duration="1301000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

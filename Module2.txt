@@ -116,19 +116,84 @@ Cú pháp:
 5. PriorityQueues: lưu trữ tập các đối tượng được xử lý theo thứ tự ưu tiên của chúng. 
 
 
+6. Search Algorithm:
+	+ Tìm kiếm tuần tự hay còn được gọi là tìm kiếm tuyến tính là một giải thuật tìm kiếm cơ bản và đơn giản nhất đối với lập trình viên.
+	+ Tìm kiếm nhị phân là một loại thuật toán tìm kiếm nâng cao để tìm và lấy dữ liệu từ danh sách các phần tử đã được sắp xếp (chia đôi dữ liệu trong danh sách cho đến khi giá trị yêu cầu được tìm thấy).
 
+7. Sort Algorithm :
+	- Sắp xếp nổi bọt (Bubble Sort):
 
+		+ Xuất phát từ cuối dãy, đổi chỗ các cặp phần tử kế cận để đưa phần tử nhỏ hơn trong cặp phần tử đó về vị trí đầu dãy hiện hành, sau đó sẽ không xét đến nó ở bước tiếp theo
 
+		+ Ở lần xử lý thứ i có vị trí đầu dãy là i
 
+		+ Lặp lại xử lý trên cho đến khi không còn cặp phần tử nào để xét
 
+		+ Độ phức tạp thuật toán
 
+			Trường hợp tốt: O(n)
+			Trung bình: O(n^2)
+			Trường hợp xấu: O(n^2)
 
+	- Sắp xếp chọn (Selection Sort):
 
+		+ Chọn phần tử nhỏ nhất trong n phần tử ban đầu, đưa phần tử này về vị trí đúng là đầu dãy hiện hành
 
+		+ Xem dãy hiện hành chỉ còn n-1 phần tử của dãy ban đầu, bắt đầu từ vị trí thứ 2; lặp lại quá trình trên cho dãy hiện hành... đến khi dãy hiện hành chỉ còn 1 phần tử
 
+		+ Độ phức tạp thuật toán
 
+			Có độ phức tạp so sánh là O(n2) (n2/2 phép so sánh).
+			Thuật toán tốn thời gian gần như bằng nhau đối với mảng đã được sắp xếp cũng như mảng chưa được sắp xếp.
 
+	- Sắp xếp chèn (Insertion Sort):
 
+		+ Tìm cách chèn phần tử a[i] vào vị trí thích hợp của đoạn đã được sắp để có dãy mới a[0] , a[1] ,... , a[i-1] trở nên có thứ tự
+
+		+ Vị trí này chính là pos thỏa : a[pos-1] <= a[i ]< a[pos] (1 <= pos <= i)
+		
+		+ Độ phức tạp thuật toán
+			
+			Trường hợp tốt: O(n)
+			Trung bình: O(n^2)
+			Trường hợp xấu: O(n^2)
+
+8. Ngoại lệ (Exception): 
+
+Tất cả các lớp exception đều là lớp con của lớp java.lang.Exception
+
+Lớp exception là lớp con của lớp Throwable. 
+
+Một loại lớp exception khác là Error cũng là lớp con của lớp Throwable.
+
+Có các ngoại lệ sau: 
+	
+	- Checked Exception:  Là ngoại lệ thường xảy ra do người dùng mà không thể lường trước được bởi lập trình viên.
+	- Unchecked Exception: Một ngoại lệ xảy ra ở runtime là ngoại lệ có thể tránh được bởi lập trình viên.
+	- Error: Nó không giống các exception, nhưng vấn đề xảy ra vượt quá tầm kiểm soát của lập trình viên hay người dùng. Error được bỏ qua trong code của bạn vì bạn hiếm khi có thể làm gì đó khi chương trình bị error.
+	- Xử lý ngoại lệ (Exception Handling) là một kỹ thuật để xử lý các Runtime Error như ClassNotFound, IO, SQL, Remote, …  
+
+Các phương thức trong Exception:
+
+	+ public String getMessage(): Trả về một message cụ thể về exception đã xảy ra. Message này được khởi tạo bởi phương thức constructor của 			Throwable.
+
+	+ public Throwable getCause(): Trả về nguyên nhân xảy ra exception biểu diễn bởi đối tượng Throwable
+
+	+ public String toString(): Trả về tên của lớp và kết hợp với kết quả từ phương thức getMessage().
+
+	+ public void printStackTrace(): In ra kết quả của phương thức toString cùng với stack trace đến System.err.
+
+Có 5 từ khóa được sử dụng để Xử lý ngoại lệ trong Java, đó là:
+
+	+ try : Sử dụng để chứa đoạn lệnh có thể gây ra ngoại lệ, nó phải được theo sau bởi khối catch hoặc finally
+
+	+ catch : Sử dụng để xử lý ngoại lệ, các khối code để xử lý ngoại lệ sẽ được đặt trong đây
+
+	+ finally : Sử dụng để thực thi đoạn mã cần thiết của chương trình (Khối này sẽ luôn được thực thi)
+
+	+ throw : Sử dụng để ném ra ngoại lệ
+
+	+ throws : Sử dụng để khai báo ngoại lệ
 
 
 
