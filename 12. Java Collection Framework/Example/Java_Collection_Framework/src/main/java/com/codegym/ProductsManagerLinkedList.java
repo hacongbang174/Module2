@@ -1,2 +1,4 @@
-package com.codegym;public class ProductsManagerLinkedList {
+package com.codegym;
+
+public class ProductsManagerLinkedList {
 }

@@ -5,15 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49df6200-e8cf-4f64-a30d-22ded31e0ea6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/encodings.xml" beforeDir="false" />
@@ -62,6 +53,7 @@
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/target/classes/com/codegym/MyListTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../11. DSA Stack &amp; Queue/Example/TreeMap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. DSA Stack &amp; Queue/Example/TreeMap/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../11. DSA Stack &amp; Queue/Practice/Queue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. DSA Stack &amp; Queue/Practice/Queue/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/src/main/java/Animal/AbstractAndInterfaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/src/main/java/Animal/AbstractAndInterfaceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/target/classes/Animal/AbstractAndInterfaceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/target/classes/Animal/AbstractAndInterfaceTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Example/Refactoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Example/Refactoring/.idea/workspace.xml" afterDir="false" />
@@ -116,10 +108,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CNTT/Codegym/Module2/12. Java Collection Framework/Practice/HashMap_HashSet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -131,7 +125,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679274336445</updated>
-      <workItem from="1679274337539" duration="854000" />
+      <workItem from="1679274337539" duration="1640000" />
+      <workItem from="1679277576455" duration="2985000" />
+      <workItem from="1679286064680" duration="608000" />
     </task>
     <servers />
   </component>

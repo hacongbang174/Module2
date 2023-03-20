@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d03fcd26-7332-4655-adf2-0a1f19286c6b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/AbsoluteValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/AbsoluteValueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/untitled/src/main/java/org/example/NextDayCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Example/untitled/src/main/java/org/example/NextDayCalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/src/main/java/Animal/AbstractAndInterfaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/src/main/java/Animal/AbstractAndInterfaceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/target/classes/Animal/AbstractAndInterfaceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/target/classes/Animal/AbstractAndInterfaceTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Example/Refactoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Example/Refactoring/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Practice/Refactoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Practice/Refactoring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,10 +50,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CNTT/Codegym/Module2/9. Automated Testing & TDD/Practice/FindAbs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,7 +67,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678869367309</updated>
-      <workItem from="1678869368370" duration="326000" />
+      <workItem from="1678869368370" duration="2046000" />
+      <workItem from="1678874395850" duration="64000" />
     </task>
     <servers />
   </component>

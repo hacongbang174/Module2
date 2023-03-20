@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70986ab5-22a0-417f-9cce-49a8f4905699" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/TreeMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Queue/src/main/java/com/codegym/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/encodings.xml" beforeDir="false" />
@@ -58,6 +51,7 @@
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/src/main/java/com/codegym/MyListTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/target/classes/com/codegym/MyList.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/target/classes/com/codegym/MyListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Practice/Queue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/Queue/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/src/main/java/Animal/AbstractAndInterfaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/src/main/java/Animal/AbstractAndInterfaceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/target/classes/Animal/AbstractAndInterfaceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/target/classes/Animal/AbstractAndInterfaceTests.class" afterDir="false" />
@@ -113,10 +107,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/CNTT/Codegym/Module2/11. DSA Stack & Queue/Example",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -128,7 +124,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679044377164</updated>
-      <workItem from="1679044378207" duration="3968000" />
+      <workItem from="1679044378207" duration="4220000" />
+      <workItem from="1679122327273" duration="239000" />
     </task>
     <servers />
   </component>

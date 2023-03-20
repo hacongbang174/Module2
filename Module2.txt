@@ -93,3 +93,42 @@ Cú pháp:
 
 	+ Sử dụng (1 lớp kế thừa 1 hoặc nhiều interface): [modifier] class TenLop implement ITen, Iten1 () {}
 	
+
+16/3/2023
+
+1. Stack:
+	+ push(): thêm 1 phần tử cần lưu giữ vào ngăn xếp.
+	+ pop(): xóa một phần tử từ ngăn xếp.
+	+ peek(): lấy phần tử đầu tiên từ ngăn xếp mà không xóa phần tử này.
+	+ isFull(): ktra ngăn xếp đầy hay không.
+	+ isEmpty(): ktra ngăn xếp trống hay không.
+
+20/3/2023
+
+1. Sets : lưu trữ một nhóm các phần tử không có phần tử nào trùng nhau.
+
+2. Lists: lưu trữ một tập các phần tử có thứ tự.
+
+3. Stacks: lưu trữ tập các đối tượng được xử lý theo dạng last-in, first-out.
+
+4. Queues: lưu trữ tập các đối tượng được xử lý theo dạng first-in, first-out.
+
+5. PriorityQueues: lưu trữ tập các đối tượng được xử lý theo thứ tự ưu tiên của chúng. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
