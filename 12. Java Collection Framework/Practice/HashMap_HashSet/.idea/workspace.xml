@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49df6200-e8cf-4f64-a30d-22ded31e0ea6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/src/main/java/com/codegym/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/src/main/java/com/codegym/MyListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/target/classes/com/codegym/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/ArrayList/target/classes/com/codegym/MyListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/src/main/java/linkedList/MyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/src/main/java/linkedList/MyLinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/target/classes/linkedList/MyLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/target/classes/linkedList/MyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Example/MyLinkedList/target/classes/linkedList/MyLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/src/main/java/com/codegym/MyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/src/main/java/com/codegym/MyLinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/target/classes/com/codegym/MyLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/target/classes/com/codegym/MyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/LinkedList/target/classes/com/codegym/MyLinkedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/src/main/java/com/codegym/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/src/main/java/com/codegym/MyListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/target/classes/com/codegym/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. DSA/Practice/MyList/target/classes/com/codegym/MyListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. DSA Stack &amp; Queue/Example/TreeMap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. DSA Stack &amp; Queue/Example/TreeMap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. DSA Stack &amp; Queue/Practice/Queue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. DSA Stack &amp; Queue/Practice/Queue/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/src/main/java/Animal/AbstractAndInterfaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/src/main/java/Animal/AbstractAndInterfaceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/target/classes/Animal/AbstractAndInterfaceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7. Abstract Class and Interface/Practice/Animal_interface_EdibleAssignment/target/classes/Animal/AbstractAndInterfaceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Example/Refactoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Example/Refactoring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Practice/Refactoring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../8. Clean Code &amp; Refactoring/Practice/Refactoring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/src/main/java/com/codegym/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/src/main/java/com/codegym/MyListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/target/classes/com/codegym/MyList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Example/MyList/target/classes/com/codegym/MyListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Practice/FindAbs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9. Automated Testing &amp; TDD/Practice/FindAbs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NFytBHXmYvRSqYi3611Hja1pt6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49df6200-e8cf-4f64-a30d-22ded31e0ea6" name="Changes" comment="" />
+      <created>1679274336445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679274336445</updated>
+      <workItem from="1679274337539" duration="854000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
