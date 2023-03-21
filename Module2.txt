@@ -195,5 +195,36 @@ Có 5 từ khóa được sử dụng để Xử lý ngoại lệ trong Java, đ
 
 	+ throws : Sử dụng để khai báo ngoại lệ
 
+21/03/2023:
 
+1. Lớp file: 
 
+	Không sử dụng tên file tuyệt đối trong chương trình của bạn. Nếu bạn sử dụng tên file như c:\\book\\Welcome.java, nó sẽ hoạt động trên Windows nhưng không hoạt động trên các nền tảng khác. Bạn nên sử dụng một tên file tương đối với thư mục hiện tại.
+
+	VD: java.io.File file = new java.io.File("image/us.gif")
+
+2. Lớp OutputStream:  System.out: output stream tiêu chuẩn
+
+	Lớp OutputStream là một lớp trừu tượng. Nó là super class của tất cả các lớp đại diện cho một output stream của các byte. Một output stream chấp nhận ouput các byte và gửi chúng đến một nơi có thể chứa.
+
+	Các phương thức:
+
+		+ public void write(int)throws IOException : được sử dụng để ghi một byte đến output stream hiện tại.
+
+		+ public void write(byte[])throws IOException : được sử dụng để ghi một mảng các byte đến output stream hiện tại.
+
+		+ public void flush()throws IOException : flush output stream hiện tại.
+
+		+ public void close()throws IOException : được sử dụng để đóng output stream hiện tại.
+
+3. Lớp InputStream: System.in: input stream tiêu chuẩn
+
+	Lớp InputStream là một lớp trừu tượng. Nó là super class của tất cả các lớp đại diện cho một input stream của các byte.
+
+	Các phương thức:
+
+		+ public abstract int read()throws IOException : Đọc byte kế tiếp của dữ liệu từ input stream. Nó trả về -1 khi đọc đến vị trí cuối tập tin.
+
+		+ public int available()throws IOException : Trả về một ước tính về số byte có thể đọc được từ input stream hiện tại.
+
+		+ public void close()throws IOException : được sử dụng để đóng input stream hiện tại.

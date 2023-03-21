@@ -15,18 +15,18 @@ public class IllegalTriangleException extends Exception {
         this.side3 = side3;
     }
 
-    /** Return side1 */
-    public double getSide1() {
-        return side1;
-    }
-
-    /** Return side2 */
-    public double getSide2() {
-        return side2;
-    }
-
-    /** Return side3 */
-    public double getSide3() {
-        return side3;
-    }
+//    /** Return side1 */
+//    public double getSide1() {
+//        return side1;
+//    }
+//
+//    /** Return side2 */
+//    public double getSide2() {
+//        return side2;
+//    }
+//
+//    /** Return side3 */
+//    public double getSide3() {
+//        return side3;
+//    }
 }
