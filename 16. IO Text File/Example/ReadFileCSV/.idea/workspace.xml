@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e30f082c-5bb0-43d6-9693-ba034d5bfc28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/ReadFileCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/countries.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/codegym/ReadFileCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/ReadFileCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/ReadFileCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codegym/ReadFileCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codegym/ReadFileCSV.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Practice/FindValueInFile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/FindValueInFile/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +55,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
@@ -76,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679369748697</updated>
       <workItem from="1679369749763" duration="2349000" />
-      <workItem from="1679373498096" duration="1622000" />
+      <workItem from="1679373498096" duration="3571000" />
     </task>
     <servers />
   </component>
