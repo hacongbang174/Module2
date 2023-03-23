@@ -4,18 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9171b9ff-6c45-4e0a-b7c9-3586f9bae7c2" name="Changes" comment="" />
+    <list default="true" id="9171b9ff-6c45-4e0a-b7c9-3586f9bae7c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/src/main/java/com/codegym/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Example/NumberGenerator/src/main/java/com/codegym/NumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Practice/AppCount/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Practice/AppCount/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../18. Thread/Practice/AppCount/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../18. Thread/Practice/AppCount/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../18. Thread/Practice/AppCount/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c1ee04a3-d984-4733-bb20-d72a4f42bcbd" />
+        <option name="url" value="https://github.com/hacongbang174/Module2.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2NLezBMoP5XnoOgfn3Yuxu8QMPy" />
   <component name="ProjectViewState">
@@ -26,10 +75,20 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Module2/18. Thread/Practice/AppCount",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +98,17 @@
       <option name="presentableId" value="Default" />
       <updated>1679448050188</updated>
       <workItem from="1679448051267" duration="1000" />
+      <workItem from="1679565465255" duration="737000" />
+      <workItem from="1679566228670" duration="98000" />
+      <workItem from="1679566350914" duration="618000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
