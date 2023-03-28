@@ -8,13 +8,13 @@ public class Film {
     private int ageLimit;
     private int durationTime;
     private Date premiereDate;
-    private TypeOfFilm type;
+    private ETypeOfFilm type;
     private String country;
     private String actor;
     private String director;
     private String description;
 
-    public Film(int id, String name, int ageLimit, int durationTime, Date premiereDate, TypeOfFilm type, String country, String actor, String director, String description) {
+    public Film(int id, String name, int ageLimit, int durationTime, Date premiereDate, ETypeOfFilm type, String country, String actor, String director, String description) {
         this.id = id;
         this.name = name;
         this.ageLimit = ageLimit;
@@ -67,11 +67,11 @@ public class Film {
         this.premiereDate = premiereDate;
     }
 
-    public TypeOfFilm getType() {
+    public ETypeOfFilm getType() {
         return type;
     }
 
-    public void setType(TypeOfFilm type) {
+    public void setType(ETypeOfFilm type) {
         this.type = type;
     }
 

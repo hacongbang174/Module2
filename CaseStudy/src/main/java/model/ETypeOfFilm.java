@@ -1,6 +1,6 @@
 package model;
 
-public enum TypeOfFilm {
+public enum ETypeOfFilm {
     ACTION(1, "action"),
     CARTOON(2, "cartoon"),
 
@@ -13,7 +13,7 @@ public enum TypeOfFilm {
     private int id;
     private String name;
 
-    TypeOfFilm(int id, String name) {
+    ETypeOfFilm(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -33,16 +33,16 @@ public enum TypeOfFilm {
     public void setName(String name) {
         this.name = name;
     }
-    public static TypeOfFilm getTypeByID(int id) {
-        for (TypeOfFilm type : values()) {
+    public static ETypeOfFilm getTypeByID(int id) {
+        for (ETypeOfFilm type : values()) {
             if(type.id == id) {
                 return type;
             }
         }
         return null;
     }
-    public static TypeOfFilm getTypeByName(String name) {
-        for (TypeOfFilm type : values()) {
+    public static ETypeOfFilm getTypeByName(String name) {
+        for (ETypeOfFilm type : values()) {
             if(type.getName().equals(name)){
                 return type;
             }
