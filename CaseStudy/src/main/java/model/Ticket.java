@@ -7,5 +7,9 @@ public class Ticket {
     private Date date;
     private double total;
     private ShowTime showTime;
+    private int priceTicketId;
+    private int chairId;
+    private int employeeId;
+
 
 }
