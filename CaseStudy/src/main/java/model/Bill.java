@@ -8,5 +8,5 @@ public class Bill {
     private String id;
     private User user;
     private Date dateBill;
-    private Set<BillDetail> billDetails = new HashSet<>();
+
 }
