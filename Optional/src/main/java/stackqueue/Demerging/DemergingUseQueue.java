@@ -44,6 +44,7 @@ public class DemergingUseQueue {
             personListNew.add(Nam.remove());
         }
         System.out.println(personListNew);
+
     }
 
 }
