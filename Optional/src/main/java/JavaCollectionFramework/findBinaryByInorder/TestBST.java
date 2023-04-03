@@ -1,4 +1,4 @@
-package JavaCollectionFramework.findBinary;
+package JavaCollectionFramework.findBinaryByInorder;
 
 public class TestBST {
     public static void main(String[] args) {

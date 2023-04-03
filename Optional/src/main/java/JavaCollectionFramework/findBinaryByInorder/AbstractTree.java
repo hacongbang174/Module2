@@ -1,4 +1,4 @@
-package JavaCollectionFramework.findBinary;
+package JavaCollectionFramework.findBinaryByInorder;
 
 public abstract class AbstractTree<E> implements Tree<E> {
     @Override
