@@ -1,6 +1,4 @@
-package JavaCollectionFramework.deleteBinarySearchTree;
-
-import JavaCollectionFramework.findBinaryByPostorder.Tree;
+package JavaCollectionFramework.deleteSearchBinarySearchTree;
 
 public class BST<E extends Comparable<E>> extends AbstractTree<E> {
     protected TreeNode<E> root;

@@ -1,4 +1,4 @@
-package JavaCollectionFramework.deleteBinarySearchTree;
+package JavaCollectionFramework.deleteSearchBinarySearchTree;
 
 public interface Tree<E> {
     public boolean insert(E e);

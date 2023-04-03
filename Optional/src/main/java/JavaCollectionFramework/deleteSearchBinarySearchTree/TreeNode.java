@@ -1,4 +1,4 @@
-package JavaCollectionFramework.deleteBinarySearchTree;
+package JavaCollectionFramework.deleteSearchBinarySearchTree;
 
 public class TreeNode<E> {
     protected E element;

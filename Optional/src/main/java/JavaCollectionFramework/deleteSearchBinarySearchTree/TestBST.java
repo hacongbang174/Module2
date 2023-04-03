@@ -1,4 +1,4 @@
-package JavaCollectionFramework.deleteBinarySearchTree;
+package JavaCollectionFramework.deleteSearchBinarySearchTree;
 
 public class TestBST {
     public static void main(String[] args) {

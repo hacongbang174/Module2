@@ -1,4 +1,4 @@
-package JavaCollectionFramework.deleteBinarySearchTree;
+package JavaCollectionFramework.deleteSearchBinarySearchTree;
 
 public abstract class AbstractTree<E> implements Tree<E> {
     @Override
