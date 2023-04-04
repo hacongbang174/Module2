@@ -1,9 +1,6 @@
 package IOBinaryFileSerialization;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         File source = new File("D:\\CNTT\\Codegym\\Module2\\Optional\\src\\main\\java\\IOBinaryFileSerialization\\source.txt");
@@ -60,3 +57,4 @@ public class Main {
         }
     }
 }
+
