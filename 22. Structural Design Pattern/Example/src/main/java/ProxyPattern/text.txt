@@ -1,0 +1,28 @@
+<!--
+* CoreUI Pro - Angular 9 Admin Template
+* @version v2.9.0
+* @link https://coreui.io/pro/angular/
+* Copyright (c) 2017-2020 creativeLabs Łukasz Holeczek
+* License (https://coreui.io/pro/license)
+-->
+<!doctype html>
+<html>
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="CodeGym Social">
+  <meta name="author" content="CodeGym">
+  <meta name="keyword" content="CodeGym Social">
+  <script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="assets/js/freewall.js"></script>
+  <script src="https://andy.codegym.vn/js/gamification_notification.js"></script>
+  <script async src="https://itsm.codegym.vn/widget/widget.js"></script>
+  <link rel="shortcut icon" href="assets/img/brand/icon-codegym.ico">
+  <title>CodeGym Social</title>
+<link rel="stylesheet" href="styles.bb4ccd75e2fd91006718.css"></head>
+<body class="app">
+<!-- App Loading... -->
+<script src="runtime.689ba4fd6cadb82c1ac2.js" defer></script><script src="polyfills-es5.987d8891b8dbe2bc4bde.js" nomodule defer></script><script src="polyfills.98879573bc148356a2af.js" defer></script><script src="scripts.e12aff129e685104b68b.js" defer></script><script src="main.74afd7834d1955c31be2.js" defer></script></body>
+</html>
