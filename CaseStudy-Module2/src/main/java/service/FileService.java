@@ -1,0 +1,67 @@
+package service;
+
+import model.Food;
+import model.User;
+import repository.IModel;
+import repository.UserRepository;
+
+import java.io.*;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class FileService {
+    public static <T> List<T> readData(String filePath, Class<T> cls) throws IOException {
+        List<T> list = new ArrayList<>();
+        FileReader reader = null;
+        BufferedReader bufferedReader = null;
+        try{
+            reader = new FileReader(filePath);
+            bufferedReader = new BufferedReader(reader);
+            String line = "";
+            while((line = bufferedReader.readLine()) != null){
+                IModel<T> iModel = (IModel<T>) cls.getDeclaredConstructor().newInstance();
+                T temp = iModel.parseData(line);
+                list.add(temp);
+            }
+            bufferedReader.close();
+            reader.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (InvocationTargetException e) {
+            throw new RuntimeException(e);
+        } catch (InstantiationException e) {
+            throw new RuntimeException(e);
+        } catch (IllegalAccessException e) {
+            throw new RuntimeException(e);
+        } catch (NoSuchMethodException e) {
+            throw new RuntimeException(e);
+        } finally {
+            reader.close();
+            bufferedReader.close();
+        }
+        return list;
+    }
+    public static <T> void writeData(String filePath, List<T> list){
+        try{
+            FileWriter writer = new FileWriter(filePath);
+            PrintWriter printWriter = new PrintWriter(writer);
+            for(int i = 0; i < list.size(); i++){
+                printWriter.write(list.get(i).toString());
+                if(i != (list.size()-1)){
+                    printWriter.write("\n");
+                }
+            }
+            printWriter.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        List<Food> list = readData("./src/main/data/food.csv", Food.class);
+        System.out.println(list.get(0));
+    }
+}

@@ -1,7 +1,7 @@
 package model;
 
 public enum EPosition {
-    CUSTOMER(0,"CUSTOMER"), EMPLOYEE(1,"EMPLOYEE");
+    MASTER(0,"MASTER"), MANAGER(1,"MANAGER"), EMPLOYEE(2,"EMPLOYEE"), CUSTOMER(3,"CUSTOMER");
     private long idPosition;
     private String name;
 
