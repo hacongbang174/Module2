@@ -51,6 +51,12 @@ public class User implements IModel<User> {
     public int getId() {
         return id;
     }
+
+    @Override
+    public String getName() {
+        return fullName;
+    }
+
     @Override
     public void update(User obj) {
         this.id = obj.id;

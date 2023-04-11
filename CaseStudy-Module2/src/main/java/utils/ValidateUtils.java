@@ -20,4 +20,10 @@ public class ValidateUtils {
     public static boolean isUserName(String username){
         return Pattern.matches(USERNAME_REGEX,username);
     }
+    public static boolean isValidPrice(double price) {
+        if (price > 0 && price < 200000) {
+            return true;
+        }
+        return false;
+    }
 }

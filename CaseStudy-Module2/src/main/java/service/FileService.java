@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileService {
-    public static <T> List<T> readData(String filePath, Class<T> cls) throws IOException {
+    public  <T> List<T> readData(String filePath, Class<T> cls) throws IOException {
         List<T> list = new ArrayList<>();
         FileReader reader = null;
         BufferedReader bufferedReader = null;
@@ -44,7 +44,7 @@ public class FileService {
         }
         return list;
     }
-    public static <T> void writeData(String filePath, List<T> list){
+    public  <T> void writeData(String filePath, List<T> list){
         try{
             FileWriter writer = new FileWriter(filePath);
             PrintWriter printWriter = new PrintWriter(writer);
@@ -60,8 +60,8 @@ public class FileService {
         }
     }
 
-    public static void main(String[] args) throws IOException {
-        List<Food> list = readData("./src/main/data/food.csv", Food.class);
-        System.out.println(list.get(0));
-    }
+//    public static void main(String[] args) throws IOException {
+//        List<Food> list = readData("./src/main/data/food.csv", Food.class);
+//        System.out.println(list.get(0));
+//    }
 }

@@ -7,6 +7,7 @@ import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -22,6 +23,7 @@ public class FoodInfo {
         List<Integer> listIdBakery = new ArrayList<>();
         List<String> listNameBakery = new ArrayList<>();
         List<Double> listPriceBakery = new ArrayList<>();
+
         readInfoToWeb("https://phuclong.com.vn/category/thuc-uong", "<button class=\"btn btn-default add-to-cart\" data-id=\"(.*?)\"", listIdDrink);
         readInfoToWeb("https://phuclong.com.vn/category/thuc-uong", "data-name=\"(.*?)\"", listNameDrink);
         readInfoToWeb("https://phuclong.com.vn/category/thuc-uong", "data-price=\"(.*?)\">Đặt hàng", listPriceDrink);
@@ -30,10 +32,12 @@ public class FoodInfo {
         readInfoToWeb("https://phuclong.com.vn/category/bakery", "data-price=\"(.*?)\">Đặt hàng", listPriceBakery);
         List<String> foods = new ArrayList<>();
         for (int i = 0; i < listIdDrink.size(); i++) {
-            foods.add(listIdDrink.get(i) + "," + listNameDrink.get(i) + "," + listPriceDrink.get(i) + ",drink");
+            int quantity = (int) Math.floor(Math.random()*20);
+            foods.add(listIdDrink.get(i) + "," + listNameDrink.get(i) + "," + quantity + "," +listPriceDrink.get(i) + ",drink");
         }
         for (int i = 0; i < listIdBakery.size(); i++) {
-            foods.add(listIdBakery.get(i) + "," + listNameBakery.get(i) + "," + listPriceBakery.get(i) + ",bakery");
+            int quantity = (int) Math.floor(Math.random()*20);
+            foods.add(listIdBakery.get(i) + "," + listNameBakery.get(i) + "," + quantity + "," + listPriceBakery.get(i) + ",bakery");
         }
         writeToFile("./src/main/data/food.csv", foods);
     }
