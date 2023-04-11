@@ -82,7 +82,7 @@ public class FileContext<T> {
         }
         return resultList;
     }
-    public void addList(List<T> list){
+    public void addList(List<T> list) throws IOException {
         fileService.writeData(filePath,list);
     }
 }

@@ -17,7 +17,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\main\data\oderAll.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\main\data\user.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\main\data\userUse.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

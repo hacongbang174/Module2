@@ -31,7 +31,8 @@ public class User implements IModel<User> {
         this.address = address;
         this.eRole = eRole;
     }
-//    public User(String raw) {
+
+    //    public User(String raw) {
 //        String [] strings = raw.split(",");
 //        this.id = Integer.parseInt(strings[0]);
 //        this.username = strings[1];
@@ -48,6 +49,7 @@ public class User implements IModel<User> {
     public User() {
 
     }
+
     public int getId() {
         return id;
     }
@@ -71,10 +73,11 @@ public class User implements IModel<User> {
         this.address = obj.address;
         this.eRole = obj.eRole;
     }
+
     @Override
     public User parseData(String line) {
         User user = new User();
-        String [] strings = line.split(",");
+        String[] strings = line.split(",");
         int id = Integer.parseInt(strings[0]);
         String username = strings[1];
         String password = strings[2];
@@ -90,7 +93,8 @@ public class User implements IModel<User> {
         user.setId(id);
         user.setUsername(username);
         user.setPassword(password);
-        user.setFullName(fullName);;
+        user.setFullName(fullName);
+        ;
         user.setPhoneNumber(phoneNumber);
         user.setGender(gender);
         user.setCccd(cccd);
@@ -186,8 +190,12 @@ public class User implements IModel<User> {
         this.eRole = eRole;
     }
 
+    public String userView() {
+        return String.format("            ║%7s║%-15s║ %-20s║ %-15s║ %-15s║%-15s║ %-15s║ %-36s║ %-30s║", this.id, this.username, this.fullName, this.phoneNumber, this.gender.getName(), this.cccd, DateFormat.convertDateToString(this.birthDay), this.email, this.address);
+    }
+
     @Override
     public String toString() {
-        return id + ", " + username + ", " + password + ", " + fullName + ", " + phoneNumber + ", " + gender.getName() + ", " + cccd + ", " + DateFormat.convertDateToString(birthDay) + ", " + email + ", " + address + ", "+ eRole.getName();
+        return id + "," + username + "," + password + "," + fullName + "," + phoneNumber + "," + gender.getName() + "," + cccd + "," + DateFormat.convertDateToString(birthDay) + "," + email + "," + address + "," + eRole.getName();
     }
 }

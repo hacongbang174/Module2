@@ -40,7 +40,7 @@ public class FoodService {
     public List<Food> searchFoodByName(String name, ISearch<Food> iSearch) throws IOException {
         return foodRepository.searchByName(name,iSearch);
     }
-    public void addFoodList(List<Food> list){
+    public void addFoodList(List<Food> list) throws IOException {
         foodRepository.addList(list);
     }
 

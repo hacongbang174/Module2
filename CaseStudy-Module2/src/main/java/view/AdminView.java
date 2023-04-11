@@ -15,12 +15,11 @@ public class AdminView {
     public  void menuAdminView(){
         System.out.println("                               ╔═══════════════════════════════════════════════════════════════════════════════════╗");
         System.out.println("                               ║                                    Giao diện Admin                                ║");
-        System.out.println("                               ║                                 [1] Quản lý thức uống, đồ ăn                      ║");
+        System.out.println("                               ║                                 [1] Quản lý đồ uống, thức ăn                      ║");
         System.out.println("                               ║                                 [2] Quản lý đơn hàng                              ║");
-        System.out.println("                               ║                                 [3] Quản lý nhân viên                             ║");
-        System.out.println("                               ║                                 [4] Quản lý khách hàng                            ║");
-        System.out.println("                               ║                                 [5] Tổng doanh thu                                ║");
-        System.out.println("                               ║                                 [6] Đăng xuất                                     ║");
+        System.out.println("                               ║                                 [3] Quản lý khách hàng                            ║");
+        System.out.println("                               ║                                 [4] Tổng doanh thu                                ║");
+        System.out.println("                               ║                                 [5] Đăng xuất                                     ║");
         System.out.println("                               ╚═══════════════════════════════════════════════════════════════════════════════════╝");
     }
     public void launcher() throws IOException {
@@ -41,9 +40,6 @@ public class AdminView {
                     break;
                 case 4:
 //                    findFoodByIdOrName();
-                    break;
-                case 5:
-//                    adminView.menuAdminView();
                     break;
                 default:
                     FoodView foodView = new FoodView();
@@ -69,4 +65,5 @@ public class AdminView {
         } while (checkActionContinue);
         return false;
     }
+
 }

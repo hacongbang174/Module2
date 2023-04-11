@@ -9,6 +9,7 @@ import utils.SortFoodByIdDecrease;
 import utils.ValidateUtils;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -156,17 +157,25 @@ public class FoodView {
                                         break;
                                     case 2:
                                         System.out.println("Nhập số lượng bạn muốn sửa:");
-                                        int quantity = Integer.parseInt(scanner.nextLine());
-                                        foods.get(i).setQuantity(quantity);
+                                        inputFoodQuantity(foods.get(i));
                                         break;
                                     case 3:
                                         System.out.println("Nhập giá bạn muốn sửa:");
-                                        double price = Double.parseDouble(scanner.nextLine());
-                                        foods.get(i).setPriceFood(price);
+                                        inputFoodPrice(foods.get(i));
                                         break;
                                     case 4:
                                         System.out.println("Nhập loại bạn muốn sửa:");
                                         String type = scanner.nextLine();
+                                        switch (type) {
+                                            case "drink":
+                                                break;
+                                            case "bakery":
+                                                break;
+                                            default:
+                                                System.out.println("Nhập sai, xin mời nhập lại (drink/bakery):");
+                                                type = scanner.nextLine();
+                                                break;
+                                        }
                                         foods.get(i).seteTypeOfFood(ETypeOfFood.getTypeOfFoodByName(type));
                                         break;
                                     case 5:
@@ -203,12 +212,26 @@ public class FoodView {
         switch (checkName) {
             case 1:
                 System.out.println("Sản phẩm đã có, mời bạn thêm số lượng");
-                System.out.println("Nhập số lượng:");
-                int quantity1 = Integer.parseInt(scanner.nextLine());
+                int quantity = 0;
+                boolean checkValid = false;
+                do {
+                    System.out.println("Nhập số lượng");
+                    try {
+                        quantity = Integer.parseInt(scanner.nextLine());
+                    } catch (NumberFormatException numberFormatException) {
+                        System.out.println("Số lượng không hợp lệ vui lòng nhập lại! Số lượng từ 0-1000");
+                        quantity = 0;
+                        continue;
+                    }
+                    checkValid = ValidateUtils.isQuantity(quantity);
+                    if (checkValid==false) {
+                        System.out.println("Số lượng không hợp lệ vui lòng nhập lại! Số lượng từ 0-1000");
+                    }
+                } while (checkValid==false);
                 int quantityNew = 0;
                 for (int i = 0; i < foods.size(); i++) {
                     if (foods.get(i).getNameFood().equals(name)) {
-                        quantityNew = foods.get(i).getQuantity() + quantity1;
+                        quantityNew = foods.get(i).getQuantity() + quantity;
                         food.setIdFood(foods.get(i).getIdFood());
                         food.setNameFood(foods.get(i).getNameFood());
                         food.setQuantity(quantityNew);
@@ -219,8 +242,7 @@ public class FoodView {
                 }
                 break;
             case -1:
-                System.out.println("Nhập số lượng:");
-                int quantity = Integer.parseInt(scanner.nextLine());
+                inputFoodQuantity(food);
                 inputFoodPrice(food);
                 System.out.println("Nhập loại (drink/bakery):");
                 String typeOfFood = scanner.nextLine();
@@ -238,7 +260,7 @@ public class FoodView {
                 int id = foods.get(foods.size() - 1).getIdFood() + 1;
                 food.setIdFood(id);
                 food.setNameFood(name);
-                food.setQuantity(quantity);
+//                food.setQuantity(quantity);
 //                food.setPriceFood(price);
                 food.seteTypeOfFood(ETypeOfFood.getTypeOfFoodByName(typeOfFood));
                 foods.add(food);
@@ -252,6 +274,15 @@ public class FoodView {
     public void showFoodList() throws IOException {
         List<Food> foods = foodService.getAllFood();
         foods.sort(new SortFoodByIDIncrease());
+        System.out.println("            ╔═══════╦══════════════════════════════╦═══════════╦════════════════╦═══════════════════╗");
+        System.out.printf("            ║%7s║%-30s║ %-10s║ %-15s║ %-18s║", "ID", "Food's name", "Quantity", "Price", "Type Of Food").println();
+        System.out.println("            ╠═══════╬══════════════════════════════╬═══════════╬════════════════╬═══════════════════╣");
+        for (Food food : foods) {
+            System.out.printf(food.foodView()).println();
+        }
+        System.out.println("            ╚═══════╩══════════════════════════════╩═══════════╩════════════════╩═══════════════════╝");
+    }
+    public void showFoodList(List<Food> foods) throws IOException {
         System.out.println("            ╔═══════╦══════════════════════════════╦═══════════╦════════════════╦═══════════════════╗");
         System.out.printf("            ║%7s║%-30s║ %-10s║ %-15s║ %-18s║", "ID", "Food's name", "Quantity", "Price", "Type Of Food").println();
         System.out.println("            ╠═══════╬══════════════════════════════╬═══════════╬════════════════╬═══════════════════╣");
@@ -296,5 +327,38 @@ public class FoodView {
         } while (checkValid==false);
 
         food.setPriceFood(price);
+    }
+    public void inputFoodQuantity(Food food) {
+        int quantity = 0;
+        boolean checkValid = false;
+        do {
+            System.out.println("Nhập số lượng");
+            try {
+                quantity = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException numberFormatException) {
+                System.out.println("Số lượng không hợp lệ vui lòng nhập lại! Số lượng từ 0-1000");
+                quantity = 0;
+                continue;
+            }
+            checkValid = ValidateUtils.isQuantity(quantity);
+            if (checkValid==false) {
+                System.out.println("Số lượng không hợp lệ vui lòng nhập lại! Số lượng từ 0-1000");
+            }
+        } while (checkValid==false);
+        food.setQuantity(quantity);
+    }
+
+    public void searchFoodByString() throws IOException {
+        System.out.println("Nhập tên bạn muốn tìm kiếm: ");
+        String kw = scanner.nextLine();
+        List<Food> results = new ArrayList<>();
+
+        List<Food> foods = foodService.getAllFood();
+        for (int i = 0; i < foods.size(); i++) {
+            if(foods.get(i).getNameFood().contains(kw)){
+                results.add(foods.get(i));
+            }
+        }
+        showFoodList(results);
     }
 }

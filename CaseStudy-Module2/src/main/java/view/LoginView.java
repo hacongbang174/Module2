@@ -11,12 +11,14 @@ import utils.SortUserById;
 import utils.ValidateUtils;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
 
 public class LoginView {
     private final String FILE_PATH_USER = "./src/main/data/user.csv";
+    private final String FILE_PATH_USERUSE = "./src/main/data/userUse.csv";
     private static User currentUser = null;
     private UserService userService;
     private AdminView adminView;
@@ -78,7 +80,12 @@ public class LoginView {
             if (!checkInfoLogin) {
                 System.out.println("Incorrect username or incorrect password. Please re-enter");
             }else {
-                adminView.menuAdminView();
+                List<User> userList = new ArrayList<>();
+                User user = userService.loginCustomer(username,password);
+                userList.add(user);
+                fileService.writeData(FILE_PATH_USERUSE, userList);
+                CustomerView customerView = new CustomerView();
+                customerView.launcher();
             }
         }while (checkInfoLogin);
     }
@@ -219,4 +226,24 @@ public class LoginView {
         user.setUsername(username);
     }
 
+    public void editPassWord() {
+    }
+
+    public void editPhoneNumber() {
+    }
+
+    public void editEmail() {
+    }
+
+    public void editAddress() {
+    }
+
+    public void showInfoAccount() throws IOException {
+        List<User> users = userService.getAllUserUse();
+        System.out.println("            ╔═══════╦═══════════════╦═════════════════════╦════════════════╦════════════════╦═══════════════╦════════════════╦═════════════════════════════════════╦═══════════════════════════════╗");
+        System.out.printf("            ║%7s║%-15s║ %-20s║ %-15s║ %-15s║%-15s║ %-15s║ %-36s║ %-30s║", "ID" , "USERNAME" , "FULLNAME" , "PHONE NUMBER" , "GENDER" , "CCCD" , "BIRTHDAY" , "EMAIL" , "ADDRESS" ).println();
+        System.out.println("            ╠═══════╬═══════════════╬═════════════════════╬════════════════╬════════════════╬═══════════════╬════════════════╬═════════════════════════════════════╬═══════════════════════════════╣");
+        System.out.printf(users.get(0).userView()).println();
+        System.out.println("            ╚═══════╩═══════════════╩═════════════════════╩════════════════╩════════════════╩═══════════════╩════════════════╩═════════════════════════════════════╩═══════════════════════════════╝");
+    }
 }

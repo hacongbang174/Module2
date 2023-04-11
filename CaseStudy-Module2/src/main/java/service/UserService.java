@@ -3,6 +3,7 @@ package service;
 import model.ERole;
 import model.User;
 import repository.UserRepository;
+import repository.UserUseRepository;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,32 +11,36 @@ import java.util.List;
 
 public class UserService {
     private UserRepository userRepository;
+    private UserUseRepository userUseRepository;
     public UserService() {
         userRepository = new UserRepository();
+        userUseRepository = new UserUseRepository();
     }
     public List<User> getAllUser() throws IOException {
         return userRepository.getAll();
     }
-    public User loginCustomer(String username, String password) throws IOException {
+//    public User loginCustomer(String username, String password) throws IOException {
+//        List<User> allUsers = getAllUser();
+//        for (int i = 0; i < allUsers.size(); i++) {
+//            if(allUsers.get(i).getUsername().equals(username) && allUsers.get(i).getPassword().equals(password) && allUsers.get(i).geteRole() == ERole.customer) {
+//                return allUsers.get(i);
+//            }
+//        }
+//        return null;
+//    }
+    public boolean checkLoginAdmin(String username, String pass) throws IOException {
         List<User> allUsers = getAllUser();
         for (int i = 0; i < allUsers.size(); i++) {
-            if(allUsers.get(i).getUsername().equals(username) && allUsers.get(i).getPassword().equals(password) && allUsers.get(i).geteRole() == ERole.customer) {
-                return allUsers.get(i);
+            if (allUsers.get(i).getUsername().equals(username) && allUsers.get(i).getPassword().equals(pass) && allUsers.get(i).geteRole().equals(ERole.admin)) {
+                return true;
             }
-        }
-        return null;
-    }
-    public boolean checkLoginAdmin(String username, String pass) throws IOException {
-        User user = getAllUser().get(0);
-        if(user.getUsername().equals(username) && user.getPassword().equals(pass)){
-            return true;
         }
         return false;
     }
     public boolean checkLoginCustomer(String username, String pass) throws IOException {
         List<User> allUsers = getAllUser();
-        for (int i = 1; i < allUsers.size(); i++) {
-            if (allUsers.get(i).getUsername().equals(username) && allUsers.get(i).getPassword().equals(pass)) {
+        for (int i = 0; i < allUsers.size(); i++) {
+            if (allUsers.get(i).getUsername().equals(username) && allUsers.get(i).getPassword().equals(pass) && allUsers.get(i).geteRole().equals(ERole.customer)) {
                 return true;
             }
         }
@@ -58,7 +63,16 @@ public class UserService {
     public User loginAdmin(String username, String password) throws IOException {
         List<User> allUsers = getAllUser();
         for (int i = 0; i < allUsers.size(); i++) {
-            if(allUsers.get(i).getUsername().equals(username) && allUsers.get(i).getPassword().equals(password) && allUsers.get(i).geteRole() == ERole.admin) {
+            if(allUsers.get(i).getUsername().equals(username) && allUsers.get(i).getPassword().equals(password) && allUsers.get(i).geteRole().equals(ERole.admin)) {
+                return allUsers.get(i);
+            }
+        }
+        return null;
+    }
+    public User loginCustomer(String username, String password) throws IOException {
+        List<User> allUsers = getAllUser();
+        for (int i = 0; i < allUsers.size(); i++) {
+            if(allUsers.get(i).getUsername().equals(username) && allUsers.get(i).getPassword().equals(password) && allUsers.get(i).geteRole().equals(ERole.customer)) {
                 return allUsers.get(i);
             }
         }
@@ -101,5 +115,9 @@ public class UserService {
             }
         }
         return false;
+    }
+
+    public List<User> getAllUserUse() throws IOException {
+        return userUseRepository.getAll();
     }
 }

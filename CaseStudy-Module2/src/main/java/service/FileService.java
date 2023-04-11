@@ -44,19 +44,38 @@ public class FileService {
         }
         return list;
     }
-    public  <T> void writeData(String filePath, List<T> list){
+    public  <T> void writeData(String filePath, List<T> list) throws IOException {
+        FileWriter writer = null;
+        PrintWriter printWriter = null;
         try{
-            FileWriter writer = new FileWriter(filePath);
-            PrintWriter printWriter = new PrintWriter(writer);
+            writer = new FileWriter(filePath);
+            printWriter = new PrintWriter(writer);
             for(int i = 0; i < list.size(); i++){
                 printWriter.write(list.get(i).toString());
                 if(i != (list.size()-1)){
                     printWriter.write("\n");
                 }
             }
-            printWriter.close();
+
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }finally {
+            writer.close();
+            printWriter.close();
+        }
+    }
+    public <T> void clearData(String filePath) throws IOException {
+        FileWriter writer = null;
+        PrintWriter printWriter = null;
+        try{
+            writer = new FileWriter(filePath);
+            printWriter = new PrintWriter(writer);
+            printWriter.write("");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }finally {
+            writer.close();
+            printWriter.close();
         }
     }
 

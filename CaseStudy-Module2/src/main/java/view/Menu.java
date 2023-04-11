@@ -72,7 +72,8 @@ public class Menu {
 
     }
 
-    private void customer() {
+    private void customer() throws IOException {
+        loginView.loginCustomer();
     }
 
     public void exit() {
