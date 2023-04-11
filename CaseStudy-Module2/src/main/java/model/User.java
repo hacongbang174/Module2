@@ -12,13 +12,13 @@ public class User implements IModel<User> {
     private String fullName;
     private String phoneNumber;
     private EGender gender;
-    private long cccd;
+    private String cccd;
     private Date birthDay;
     private String email;
     private String address;
     private ERole eRole;
 
-    public User(int id, String username, String password, String fullName, String phoneNumber, EGender gender, long cccd, Date birthDay, String email, String address, ERole eRole) {
+    public User(int id, String username, String password, String fullName, String phoneNumber, EGender gender, String cccd, Date birthDay, String email, String address, ERole eRole) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -84,7 +84,7 @@ public class User implements IModel<User> {
         String fullName = strings[3];
         String phoneNumber = strings[4];
         EGender gender = EGender.getEGenderByName(strings[5]);
-        long cccd = Long.parseLong(strings[6]);
+        String cccd = strings[6];
         Date birthDay = DateFormat.parseDate(strings[7]);
         String email = strings[8];
         String address = strings[9];
@@ -150,11 +150,11 @@ public class User implements IModel<User> {
         this.gender = gender;
     }
 
-    public long getCccd() {
+    public String getCccd() {
         return cccd;
     }
 
-    public void setCccd(long cccd) {
+    public void setCccd(String cccd) {
         this.cccd = cccd;
     }
 

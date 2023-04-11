@@ -21,12 +21,10 @@ public class LoginView {
     private final String FILE_PATH_USERUSE = "./src/main/data/userUse.csv";
     private static User currentUser = null;
     private UserService userService;
-    private AdminView adminView;
     private FileService fileService;
     private Scanner scanner;
     public LoginView() {
         userService = new UserService();
-        adminView = new AdminView();
         fileService = new FileService();
         scanner = new Scanner(System.in);
     }
@@ -64,6 +62,7 @@ public class LoginView {
             if (!checkInfoLogin) {
                 System.out.println("Incorrect username or incorrect password. Please re-enter");
             }else {
+                AdminView adminView = new AdminView();
                 adminView.launcher();
             }
         }while (checkInfoLogin);
@@ -176,12 +175,12 @@ public class LoginView {
                     System.out.println("Số CCCD không hợp lệ vui lòng nhập lại!");
                 }
             } while (!checkValid);
-            checkCCCD = userService.checkCCCD(Long.parseLong(cccd));
+            checkCCCD = userService.checkCCCD(cccd);
             if (checkCCCD) {
                 System.out.println("Số CCCD đã tồn tại vui lòng nhập lại!");
             }
         }while (checkCCCD);
-        user.setCccd(Long.parseLong(cccd));
+        user.setCccd(cccd);
     }
 
     private void inputPhoneNumber(User user) throws IOException {

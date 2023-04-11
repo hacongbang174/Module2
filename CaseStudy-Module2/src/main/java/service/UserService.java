@@ -97,10 +97,10 @@ public class UserService {
         return false;
     }
 
-    public boolean checkCCCD(Long cccd) throws IOException {
+    public boolean checkCCCD(String cccd) throws IOException {
         List<User> allUsers = getAllUser();
         for (int i = 0; i < allUsers.size(); i++) {
-            if(allUsers.get(i).getCccd() == cccd) {
+            if(allUsers.get(i).getCccd().equals(cccd)) {
                 return true;
             }
         }
