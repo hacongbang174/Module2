@@ -91,7 +91,7 @@ public class AdminView {
                     oderView.deleteOder();
                     break;
                 case 6:
-                    launcherOder();
+                    launcher();
                     break;
                 default:
                     FoodView foodView = new FoodView();

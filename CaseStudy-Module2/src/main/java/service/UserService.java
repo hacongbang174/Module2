@@ -90,7 +90,7 @@ public class UserService {
     public int checkNameCustomer(String nameCustomer) throws IOException {
         List<User> allUsers = getAllUser();
         for (int i = 0; i < allUsers.size(); i++) {
-            if(allUsers.get(i).getUsername().equals(nameCustomer) && allUsers.get(i).geteRole().equals(ERole.customer)) {
+            if(allUsers.get(i).getFullName().equals(nameCustomer) && allUsers.get(i).geteRole().equals(ERole.customer)) {
                 return 1;
             }
         }

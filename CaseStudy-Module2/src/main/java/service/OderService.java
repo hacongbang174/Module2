@@ -30,7 +30,7 @@ public class OderService {
     public int checkNameFood(String name) throws IOException {
         return oderRepository.checkName(name);
     }
-    public void deleteFoodById(int id) throws IOException {
+    public void deleteFoodOutOderAllById(int id) throws IOException {
         oderAllRepository.deleteById(id);
     }
     public void deleteFoodOutOderByName(String name) throws IOException {

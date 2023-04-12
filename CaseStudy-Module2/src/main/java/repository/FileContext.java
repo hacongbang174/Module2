@@ -55,6 +55,7 @@ public class FileContext<T> {
                 break;
             }
         }
+        fileService.writeData(filePath,list);
     }
     public void deleteByName(String name) throws IOException {
         List<T> list = getAll();
@@ -65,6 +66,7 @@ public class FileContext<T> {
                 break;
             }
         }
+        fileService.writeData(filePath,list);
     }
     public void add(T newObj) throws IOException {
         List<T> list = getAll();

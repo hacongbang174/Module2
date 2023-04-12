@@ -10,7 +10,6 @@ import service.UserService;
 import utils.SortOderById;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -199,9 +198,7 @@ public class OderView {
         List<Oder> oders = oderService.getAllOder();
         String nameFood = null;
         boolean checkName = false;
-        int quantity = 0;
         do {
-            boolean checkAction = false;
             System.out.println("Nhập tên đồ uống, thức ăn bạn muốn sửa số lượng:");
             nameFood = scanner.nextLine();
             int check = oderService.checkNameFoodInOder(nameFood);
@@ -218,9 +215,9 @@ public class OderView {
         oderService.deleteFoodOutOderByName(nameFood);
         oderService.deleteFoodOutOderAllByName(nameFood);
 
-        fileService.writeData(FILE_PATH, oders);
-        fileService.writeData(FILE_PATH_ODERALL, oderAll);
-        fileService.writeData(FILE_PATH_FOOD, foods);
+//        fileService.writeData(FILE_PATH, oders);
+//        fileService.writeData(FILE_PATH_ODERALL, oderAll);
+//        fileService.writeData(FILE_PATH_FOOD, foods);
         System.out.println("✔ Bạn đã xóa món thành công ✔\n");
     }
     public void showOder() throws IOException {
@@ -412,7 +409,7 @@ public class OderView {
     }
 
     public void deleteOder() throws IOException {
-        List<Oder> oderAll = oderService.getAllOderAll();
+        showOderAll();
         int idOder = 0;
         boolean checkID = false;
         do {
@@ -429,8 +426,9 @@ public class OderView {
                     break;
             }
         } while (!checkID);
-        oderService.deleteFoodById(idOder);
-        fileService.writeData(FILE_PATH_ODERALL, oderAll);
+        oderService.deleteFoodOutOderAllById(idOder);
+//        List<Oder> oderAll = oderService.getAllOderAll();
+//        fileService.writeData(FILE_PATH_ODERALL, oderAll);
         System.out.println("✔ Bạn đã xóa oder thành công ✔\n");
     }
 
