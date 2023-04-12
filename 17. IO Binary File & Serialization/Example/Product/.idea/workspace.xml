@@ -5,25 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79bb94f2-38c7-4920-8dcb-c8d8c661dd5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../16. IO Text File/Example/ReadFileCSV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../16. IO Text File/Example/ReadFileCSV/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../16. IO Text File/Practice/FindValueInFile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../16. IO Text File/Practice/FindValueInFile/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Practice/CopyFileSizeMax/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/CopyFileSizeMax/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Practice/Student/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/Student/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Practice/Student/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/Student/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Practice/Student/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/Student/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Practice/Student/src/main/java/com/codegym/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/Student/src/main/java/com/codegym/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Practice/Student/src/main/java/com/codegym/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/Student/src/main/java/com/codegym/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Practice/Student/src/main/java/com/codegym/student.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/Student/src/main/java/com/codegym/student.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Practice/Student/target/classes/com/codegym/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Practice/Student/target/classes/com/codegym/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../19. String &amp; Regex/Practice/CrawlSong/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/csv-editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/CaseStudy-Module2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/src/main/java/data/BakeryInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/src/main/java/data/DrinkInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/src/main/java/data/SnackInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy-Module2/src/main/java/data/drink.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../CaseStudy/.idea/csv-editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../21. Design Patterns/Example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../21. Design Patterns/Example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../22. Structural Design Pattern/Example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../22. Structural Design Pattern/Example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../23. Behavioral Design Pattern/Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../23. Behavioral Design Pattern/Practice/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/CNTT/Codegym/Module2/17. IO Binary File & Serialization/Practice/Student",
+    "last_opened_file_path": "D:/CNTT/Codegym/Module2/17. IO Binary File & Serialization/Example/Product",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679393097222</updated>
       <workItem from="1679393098339" duration="1127000" />
+      <workItem from="1680682569223" duration="594000" />
     </task>
     <servers />
   </component>

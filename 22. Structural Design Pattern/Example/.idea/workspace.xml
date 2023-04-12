@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c72a53dd-88ec-4372-8044-5c539d66edb1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_collection_utils.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdapterPattern/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdapterPattern/CollectionOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdapterPattern/CollectionUtilsAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdapterPattern/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdapterPattern/java-collection-utils.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FacadePattern/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FacadePattern/ListFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FacadePattern/ListPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FacadePattern/RandomList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FacadePattern/RandomListFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FacadePattern/RandomNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProxyPattern/FileDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProxyPattern/FileDownloaderProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ProxyPattern/text.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProxyPattern/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProxyPattern/Downloader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProxyPattern/FileDownloader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ProxyPattern/FileDownloaderProxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Practice/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../21. Design Patterns/Example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../21. Design Patterns/Example/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProxyPattern/Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProxyPattern/Downloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProxyPattern/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProxyPattern/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +53,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -97,7 +71,7 @@
       <updated>1680659717357</updated>
       <workItem from="1680659718481" duration="1435000" />
       <workItem from="1680661181063" duration="2949000" />
-      <workItem from="1680664778690" duration="2782000" />
+      <workItem from="1680664778690" duration="3117000" />
     </task>
     <servers />
   </component>
