@@ -13,10 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FoodInfo {
-    public static void main(String[] args) throws IOException {
-        foodInfo();
-    }
-    public static void foodInfo() throws IOException {
+    public  void foodInfo() throws IOException {
         List<Integer> listIdDrink = new ArrayList<>();
         List<String> listNameDrink = new ArrayList<>();
         List<Double> listPriceDrink = new ArrayList<>();
@@ -42,7 +39,7 @@ public class FoodInfo {
         writeToFile("./src/main/data/food.csv", foods);
     }
 
-    private static <E> void readInfoToWeb(String urlName, String regex, List<E> list) {
+    private  <E> void readInfoToWeb(String urlName, String regex, List<E> list) {
         try {
             URL url = new URL(urlName);
             Scanner scanner = new Scanner(new InputStreamReader(url.openStream(), "UTF-8"));
@@ -61,7 +58,7 @@ public class FoodInfo {
         }
     }
 
-    public static void writeToFile(String path, List<String> list) throws IOException {
+    public  void writeToFile(String path, List<String> list) throws IOException {
         try (
                 Writer fos = new OutputStreamWriter(
                         new FileOutputStream(path), "UTF-8");
