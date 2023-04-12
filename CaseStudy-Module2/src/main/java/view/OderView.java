@@ -434,6 +434,99 @@ public class OderView {
         System.out.println("✔ Bạn đã xóa oder thành công ✔\n");
     }
 
+    public void addOder() throws IOException {
+        FoodView foodView = new FoodView();
+        foodView.showFoodList();
+        List<Food> foods = foodService.getAllFood();
+        List<User> users = userService.getAllUser();
+        List<Oder> oderAll = oderService.getAllOderAll();
+        oderAll.sort(new SortOderById());
+        Oder oder = new Oder();
+        String nameCustomer = null;
+        boolean checkNameCustomer = false;
+        do {
+            System.out.println("Nhập tên khách hàng mới:");
+            nameCustomer = scanner.nextLine();
+            int check = userService.checkNameCustomer(nameCustomer);
+            switch (check) {
+                case 1:
+                    checkNameCustomer = true;
+                    break;
+                case -1:
+                    System.out.println("Khách hàng chưa đăng ký, mời bạn nhập lại");
+                    checkNameCustomer = false;
+                    break;
+            }
+        } while (!checkNameCustomer);
+        String nameFood = null;
+        boolean checkNameFood = false;
+        do {
+            System.out.println("Nhập tên món mới:");
+            nameFood = scanner.nextLine();
+            int check = foodService.checkNameFood(nameFood);
+            switch (check) {
+                case 1:
+                    checkNameFood = true;
+                    break;
+                case -1:
+                    System.out.println("Tên món không có trong menu, mời bạn nhập lại");
+                    checkNameFood = false;
+                    break;
+            }
+        } while (!checkNameFood);
+        int quantity = 0;
+        boolean checkQuantity = false;
+        boolean checkValid = false;
+        do {
+            System.out.println("Nhập số lượng:");
+            try {
+                quantity = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException numberFormatException) {
+                System.out.println("Số lượng không hợp lệ vui lòng nhập lại! Số lượng từ 0-1000");
+                quantity = 0;
+                continue;
+            }
+            for (int i = 0; i < foods.size(); i++) {
+                if (foods.get(i).getNameFood().equals(nameFood)) {
+                    if (quantity <= foods.get(i).getQuantity()) {
+                        checkValid = true;
+                        checkQuantity = true;
+                    } else {
+                        checkValid = false;
+                        checkQuantity = false;
+                    }
+                }
+            }
+            if (!checkValid) {
+                System.out.println("Số lượng vượt quá số lượng hiện tại đang có, vui lòng nhập lại!");
+            }
+        } while (!checkQuantity);
+        double price = 0;
+        for (int i = 0; i < foods.size(); i++) {
+            if (foods.get(i).getNameFood().equals(nameFood)) {
+                price = foods.get(i).getPriceFood();
+                foods.get(i).setQuantity(foods.get(i).getQuantity() - quantity);
+            }
+        }
+        double totalMoney = quantity * price;
+
+        if(oderAll.isEmpty()) {
+            oder.setIdOder(1);
+        }else {
+            oder.setIdOder(oderAll.get(oderAll.size() - 1).getIdOder() + 1);
+        }
+        oder.setNameCustomer(nameCustomer);
+        oder.setNameFood(nameFood);
+        oder.setQuantityFood(quantity);
+        oder.setPriceFood(price);
+        oder.setTotalMoney(totalMoney);
+        oder.setCreateDateOder(new Date());
+        oderAll.add(oder);
+        fileService.writeData(FILE_PATH_ODERALL, oderAll);
+        fileService.writeData(FILE_PATH_FOOD, foods);
+        System.out.println("✔ Bạn đã thêm món thành công ✔\n");
+    }
+
 //    public static void main(String[] args) throws IOException {
 //        OderView oderView = new OderView();
 //        oderView.showTotalRevenue();

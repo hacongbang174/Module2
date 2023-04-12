@@ -40,7 +40,7 @@ public class AdminView {
                     foodView.launcher();
                     break;
                 case 2:
-//                    addFoodByIdOrName();
+                    launcherOder();
                     break;
                 case 3:
                     loginView.showInfoCustomer();
@@ -82,7 +82,7 @@ public class AdminView {
                     oderView.findOderByNameCustomer();
                     break;
                 case 3:
-                    oderView.addFoodInOder();
+                    oderView.addOder();
                     break;
                 case 4:
                     oderView.editOder();
@@ -91,7 +91,6 @@ public class AdminView {
                     oderView.deleteOder();
                     break;
                 case 6:
-                    fileService.clearData(FILE_ODER);
                     launcherOder();
                     break;
                 default:
