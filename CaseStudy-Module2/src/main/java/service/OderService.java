@@ -1,16 +1,12 @@
 package service;
 
-import model.Food;
 import model.Oder;
-import model.User;
 import repository.ISearch;
 import repository.OderAllRepository;
 import repository.OderRepository;
-import view.FoodView;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Scanner;
 
 public class OderService {
     private OderRepository oderRepository;
@@ -25,14 +21,23 @@ public class OderService {
     public Oder findFoodById(int id) throws IOException {
         return oderRepository.findById(id);
     }
-    public int checkIdFood(int id) throws IOException {
+    public int checkIdOderAll(int id) throws IOException {
+        return oderAllRepository.checkID(id);
+    }
+    public int checkIdOder(int id) throws IOException {
         return oderRepository.checkID(id);
     }
     public int checkNameFood(String name) throws IOException {
         return oderRepository.checkName(name);
     }
     public void deleteFoodById(int id) throws IOException {
-        oderRepository.deleteById(id);
+        oderAllRepository.deleteById(id);
+    }
+    public void deleteFoodOutOderByName(String name) throws IOException {
+        oderRepository.deleteByName(name);
+    }
+    public void deleteFoodOutOderAllByName(String name) throws IOException {
+        oderAllRepository.deleteByName(name);
     }
     public void addOder(Oder oder) throws IOException {
         oderRepository.add(oder);
@@ -49,5 +54,9 @@ public class OderService {
 
     public List<Oder> getAllOderAll() throws IOException {
         return oderAllRepository.getAll();
+    }
+
+    public int checkNameFoodInOder(String nameFood) throws IOException {
+        return oderRepository.checkName(nameFood);
     }
 }

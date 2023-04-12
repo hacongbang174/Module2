@@ -55,7 +55,16 @@ public class FileContext<T> {
                 break;
             }
         }
-        fileService.writeData(filePath,list);
+    }
+    public void deleteByName(String name) throws IOException {
+        List<T> list = getAll();
+        for (int i = 0; i < list.size(); i++) {
+            IModel<T> imodel = (IModel<T>) list.get(i);
+            if (imodel.getName().equals(name)) {
+                list.remove(i);
+                break;
+            }
+        }
     }
     public void add(T newObj) throws IOException {
         List<T> list = getAll();

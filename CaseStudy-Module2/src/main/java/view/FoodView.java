@@ -2,6 +2,7 @@ package view;
 
 import model.ETypeOfFood;
 import model.Food;
+import model.Oder;
 import service.FileService;
 import service.FoodService;
 import utils.SortFoodByIDIncrease;
@@ -32,9 +33,10 @@ public class FoodView {
         System.out.println("                               ║                        2. Thêm đồ uống, thức ăn                                   ║");
         System.out.println("                               ║                        3. Chỉnh sửa đồ uống, thức ăn theo id                      ║");
         System.out.println("                               ║                        4. Tìm kiếm đồ uống, thức ăn theo id                       ║");
-        System.out.println("                               ║                        5. Sắp xếp đồ uống, thức ăn theo id tăng dần               ║");
-        System.out.println("                               ║                        6. Sắp xếp đồ uống, thức ăn theo id giảm dần               ║");
-        System.out.println("                               ║                        7. Thoát chức năng                                         ║");
+        System.out.println("                               ║                        5. Xóa đồ uống, thức ăn theo id                            ║");
+        System.out.println("                               ║                        6. Sắp xếp đồ uống, thức ăn theo id tăng dần               ║");
+        System.out.println("                               ║                        7. Sắp xếp đồ uống, thức ăn theo id giảm dần               ║");
+        System.out.println("                               ║                        8. Thoát chức năng                                         ║");
         System.out.println("                               ╚═══════════════════════════════════════════════════════════════════════════════════╝");
     }
 
@@ -58,12 +60,15 @@ public class FoodView {
                     findFoodById();
                     break;
                 case 5:
-                    sortByIdIncrease();
+                    deleteFoodById();
                     break;
                 case 6:
-                    sortByIdDecrease();
+                    sortByIdIncrease();
                     break;
                 case 7:
+                    sortByIdDecrease();
+                    break;
+                case 8:
                     AdminView adminView = new AdminView();
                     adminView.launcher();
                     break;
@@ -129,8 +134,29 @@ public class FoodView {
         System.out.println("                               ║                        5. Quay lại                                                ║");
         System.out.println("                               ╚═══════════════════════════════════════════════════════════════════════════════════╝");
     }
-
-    private void editFoodById() throws IOException {
+    public void deleteFoodById() throws IOException {
+        List<Food> foods = foodService.getAllFood();
+        int id = 0;
+        boolean checkID = false;
+        do {
+            System.out.println("Nhập ID đồ uống, thức ăn bạn muốn xóa:");
+            id = Integer.parseInt(scanner.nextLine());
+            int check = foodService.checkIdFood(id);
+            switch (check) {
+                case 1:
+                    checkID = true;
+                    break;
+                case -1:
+                    System.out.println("ID không tìm thấy, mời bạn nhập lại");
+                    checkID = false;
+                    break;
+            }
+        } while (!checkID);
+        foodService.deleteFoodById(id);
+        fileService.writeData(FILE_PATH, foods);
+        System.out.println("✔ Bạn đã xóa món thành công ✔\n");
+    }
+    public void editFoodById() throws IOException {
 
         List<Food> foods = foodService.getAllFood();
         FoodView foodView = new FoodView();
@@ -202,7 +228,7 @@ public class FoodView {
         System.out.println("✔ Bạn đã cập nhật sản phẩm thành công ✔\n");
     }
 
-    private void addFood() throws IOException {
+    public void addFood() throws IOException {
         List<Food> foods = foodService.getAllFood();
         Food food = new Food();
         System.out.println("Nhập tên đồ uống, thức ăn:");

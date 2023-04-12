@@ -32,7 +32,7 @@ public class FoodInfo {
         readInfoToWeb("https://phuclong.com.vn/category/bakery", "data-price=\"(.*?)\">Đặt hàng", listPriceBakery);
         List<String> foods = new ArrayList<>();
         for (int i = 0; i < listIdDrink.size(); i++) {
-            int quantity = (int) Math.floor(Math.random()*20);
+            int quantity = (int) Math.floor(Math.random()*1000);
             foods.add(listIdDrink.get(i) + "," + listNameDrink.get(i) + "," + quantity + "," +listPriceDrink.get(i) + ",drink");
         }
         for (int i = 0; i < listIdBakery.size(); i++) {

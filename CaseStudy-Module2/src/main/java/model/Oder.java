@@ -1,6 +1,7 @@
 package model;
 
 import repository.IModel;
+import utils.DateFormat;
 
 import java.util.Date;
 import java.util.List;
@@ -107,6 +108,29 @@ public class Oder implements IModel<Oder> {
 
     @Override
     public Oder parseData(String line) {
-        return null;
+        Oder oder = new Oder();
+        String[] strings = line.split(",");
+        int idOder = Integer.parseInt(strings[0]);
+        String nameCustomer = strings[1];
+        String nameFood = strings[2];
+        int quantityFood = Integer.parseInt(strings[3]);
+        double priceFood = Double.parseDouble(strings[4]);
+        double totalMoney = Double.parseDouble(strings[5]);
+        Date createDateOder = DateFormat.parseDate2(strings[6]);
+        oder.setIdOder(idOder);
+        oder.setNameCustomer(nameCustomer);
+        oder.setNameFood(nameFood);
+        oder.setQuantityFood(quantityFood);
+        oder.setPriceFood(priceFood);
+        oder.setTotalMoney(totalMoney);
+        oder.setCreateDateOder(createDateOder);
+        return oder;
+    }
+    public String oderView() {
+        return String.format("            ║%7s║%-30s║ %-30s║ %-15s║ %-15s║ %-14s║ %-30s║", this.idOder, this.nameCustomer, this.nameFood, this.quantityFood, this.priceFood, this.totalMoney, DateFormat.convertDateToString2(this.createDateOder));
+    }
+    @Override
+    public String toString() {
+        return String.format("%s,%s,%s,%s,%s,%s,%s", this.idOder, this.nameCustomer, this.nameFood, this.quantityFood, this.priceFood, this.totalMoney, DateFormat.convertDateToString2(this.createDateOder));
     }
 }

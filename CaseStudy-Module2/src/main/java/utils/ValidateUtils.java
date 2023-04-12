@@ -7,6 +7,7 @@ public class ValidateUtils {
     public static final String EMAIL_REGEX = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
     public static final String CCCD_REGEX = "^0\\d{11}$";
     public static final String USERNAME_REGEX = "^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$";
+    public static final String PASSWORD_REGGEX = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\\\S+$).{8,}$";
 
     public static boolean isPhoneNumber(String number) {
         return Pattern.matches(PHONENUMBER_REGEX, number);
@@ -19,6 +20,9 @@ public class ValidateUtils {
     }
     public static boolean isUserName(String username){
         return Pattern.matches(USERNAME_REGEX,username);
+    }
+    public static boolean isPassWord(String password) {
+        return Pattern.matches(PHONENUMBER_REGEX, password);
     }
     public static boolean isValidPrice(double price) {
         if (price > 0 && price < 200000) {

@@ -8,7 +8,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class CustomerView {
-    private final String FILE_PATH = "./src/main/data/userUse.csv";
+    private static final String FILE_PATH_ODER = "./src/main/data/oder.csv";
+    private final String FILE_PATH_USERUSE = "./src/main/data/userUse.csv";
     private UserService userService;
     private OderView oderView;
     private FoodView foodView;
@@ -70,7 +71,8 @@ public class CustomerView {
                     launcherAccount();
                     break;
                 case 9:
-                    fileService.clearData(FILE_PATH);
+                    fileService.clearData(FILE_PATH_USERUSE);
+                    fileService.clearData(FILE_PATH_ODER);
                     Menu menu = new Menu();
                     menu.login();
                     break;
@@ -86,12 +88,12 @@ public class CustomerView {
     private void menuAccountManager() {
         System.out.println("                               ╔═══════════════════════════════════════════════════════════════════════════════════╗");
         System.out.println("                               ║                               Giao diện quản lý tài khoản                         ║");
-        System.out.println("                               ║                              [1] Hiển thị thông tin tài khoản                     ║");
-        System.out.println("                               ║                              [2] Thay đổi mật khẩu đăng nhập                      ║");
-        System.out.println("                               ║                              [3] Thay đổi số điện thoại                           ║");
-        System.out.println("                               ║                              [4] Thay đổi email                                   ║");
-        System.out.println("                               ║                              [5] Thay đổi địa chỉ                                 ║");
-        System.out.println("                               ║                              [6] Quay lại                                         ║");
+        System.out.println("                               ║                         [1] Hiển thị thông tin tài khoản                          ║");
+        System.out.println("                               ║                         [2] Thay đổi mật khẩu đăng nhập                           ║");
+        System.out.println("                               ║                         [3] Thay đổi số điện thoại                                ║");
+        System.out.println("                               ║                         [4] Thay đổi email                                        ║");
+        System.out.println("                               ║                         [5] Thay đổi địa chỉ                                      ║");
+        System.out.println("                               ║                         [6] Quay lại                                              ║");
         System.out.println("                               ╚═══════════════════════════════════════════════════════════════════════════════════╝");
     }
     public void launcherAccount() throws IOException {
